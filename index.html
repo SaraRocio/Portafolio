@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#20281a" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <main class="portfolio" aria-label="Portafolio">
+      <div class="book" data-state="opening" aria-busy="true">
+        <div id="book-canvas" aria-hidden="true"></div>
+        <nav class="tabs" aria-label="Separadores del libro" hidden></nav>
+        <section class="spread" aria-label="Páginas del libro" hidden>
+          <nav class="cutouts" aria-label="Capítulos"></nav>
+          <section class="chapter" hidden>
+            <button class="back" type="button">← Volver al índice</button>
+            <div class="chapter-art" aria-hidden="true"></div>
+            <div class="chapter-copy">
+              <h2 tabindex="-1"></h2>
+              <p></p>
+            </div>
+          </section>
+        </section>
+        <button class="skip" type="button">Saltar apertura</button>
+      </div>
+      <noscript>Activa JavaScript para abrir el libro.</noscript>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
